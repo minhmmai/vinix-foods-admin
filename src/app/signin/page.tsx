@@ -1,3 +1,5 @@
+'use client'
+
 import { signIn } from "@/app/actions/auth";
 import { useActionState } from "react";
 
