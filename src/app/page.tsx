@@ -13,6 +13,7 @@ export default function Home() {
           priority
         />
         <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
+          <li>Testing: {process.env.NEXT_PUBLIC_TEST_ENV_VAR}</li>
           <li>
             Get started by editing{" "}
             <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
@@ -21,7 +22,6 @@ export default function Home() {
             .
           </li>
           <li>Save and see your changes instantly.</li>
-          <li>Testing: {process.env.NEXT_PUBLIC_TEST_ENV_VAR}</li>
         </ol>
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
