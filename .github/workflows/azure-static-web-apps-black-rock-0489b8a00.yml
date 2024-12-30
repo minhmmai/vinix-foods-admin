@@ -46,7 +46,7 @@ jobs:
           github_id_token: ${{ steps.idtoken.outputs.result }}
           ###### End of Repository/Build Configurations ######
         env:
-          NEXT_PUBLIC_TEST_ENV_VAR: ${{ env.NEXT_PUBLIC_TEST_ENV_VAR }}
+          NEXT_PUBLIC_TEST_ENV_VAR: ${{ vars.NEXT_PUBLIC_TEST_ENV_VAR }}
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
